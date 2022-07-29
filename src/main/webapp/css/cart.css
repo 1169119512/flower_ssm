@@ -1,0 +1,85 @@
+#main{
+    width:1000px;
+    min-height:300px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:14px;
+}
+
+.wel_word{
+    float:left;
+    font-size:25px;
+    font-style: italic;
+}
+
+#main .word{
+    width:900px;
+    font-size:25px;
+    color:#FF80A1;
+    padding-bottom: 10px;
+}
+
+#main table{
+    border:1px solid blue;
+    border-radius: 5px;
+    min-height:300px;
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    min-height:100px;
+    box-sizing:border-box;
+}
+
+tr{
+    font-family: tohoma,sans-serif;
+    background: #deddc9;
+    border:none;
+    margin:0px;
+    padding:0  20px;
+    cellspacing:0;
+}
+
+td{
+    weight:auto;
+    max-height:70px;
+    padding:0 20px;
+    margin:0px;
+}
+
+td img{
+    width:60px;
+    height:auto;
+}
+
+.table_head{
+    background-color:#ebebeb;
+    font-family: tohoma,sans-serif;
+    border:none;
+    margin:0px;
+    padding:0  20px;
+    line-style:none;
+}
+
+.cart_info{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    font-size: 25px;
+    font-family: "仿宋";
+}
+.cart_info .cart_span_3 a:link{
+    color:#f89165;
+}
+
+.cart_info .cart_span_4 a:link{
+    color:#cf6484;
+}
+
+.cart_info .cart_span_3 a:visited{
+    color:#f89165;
+}
+
+.cart_info .cart_span_4 a:visited{
+    color:#cf6484;
+}

@@ -1,0 +1,77 @@
+#box-border{
+    width:1100px;
+    min-height:500px;
+    margin-left:auto;
+    margin-right:auto;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.pull-left{
+    padding-top:20px;
+    /*border:1px solid #d9d9d9;*/
+    box-sizing:border-box;
+    font-family: tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+    font-size:18px;
+    color:#7e7e80;
+    width:180px;
+    text-align:center;
+}
+
+.pull-left .hd{
+    display:flex;
+    background-color:#d6f188;
+}
+
+.pull-left .hd b{
+    background-image:url("/flower_war_exploded/images/index/admin_title_bg.png");
+    position:relative;
+    top:0;
+    left:-10px;
+    display:block;
+    width:31px;
+    height:30px;
+}
+
+.pull-left > .bd > li > a{
+    color:#585657;
+    text-decoration: none;
+    background-color:transparent;
+}
+
+.pull-left > .bd > li > b{
+    width:30px;
+    height:30px;
+    background-color:#fbe0d5;
+}
+
+.pull-left > .bd > li > a{
+
+}
+
+.pull-right{
+    border:1px red;
+    width:890px;
+    min-height:500px;
+}
+
+.pull-right  table{
+    border-spacing:0;
+
+}
+
+input[type="text"]{
+    height:25px;
+    border:0px;
+    width:600px;
+}
+
+.store_all{
+    background-image:url("/flower_war_exploded/images/index/manger_img.jpg");
+    font-family:宋体;
+}
+
+
+
+
+

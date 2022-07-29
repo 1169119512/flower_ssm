@@ -1,0 +1,16 @@
+#page_nav{
+    text-align:center;
+}
+
+#pn_input{
+    width:50px !important;
+    text-align:center;
+    background-color:#f0ebdb;
+    border:1px solid green;
+}
+
+#searchPagrBtn{
+    background-color:#fedcd3;
+    border-radius:4px;
+    border:1px solid #f0ebdb;
+}

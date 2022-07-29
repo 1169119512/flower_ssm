@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.flower.dao.FlowerDao">
+    <!-- 定义封装account和user的resultMap -->
+    <resultMap id="flowerMap" type="com.flower.pojo.Flower">
+        <id property="id" column="id"></id>
+        <result property="flower_name" column="flower_name"></result>
+        <result property="flower_kind" column="flower_kind"></result>
+        <result property="flower_language" column="flower_language"></result>
+        <result property="price" column="price"></result>
+        <result property="material" column="material"></result>
+        <result property="star" column="star"></result>
+        <result property="pack" column="pack"></result>
+        <result property="img_path" column="img_path"></result>
+        <!-- 一对一的关系映射：配置封装user的内容-->
+        <!-- select属性指定的内容，查询用户的唯一标识-->
+    </resultMap>
+
+    <select id="querryForPageTotalCountByPrice" resultType="Integer">
+        SELECT COUNT(*) FROM t_flower WHERE  <![CDATA[ price >=#{arg0} AND price <=#{arg1} ]]> ;
+    </select>
+
+
+    <select id="querryForPageItemsByPrice" resultMap="flowerMap">
+        select id,flower_name,flower_kind,flower_language,price,material,star,pack,img_path from t_flower WHERE
+        <![CDATA[ price >= #{arg2} AND price <= #{arg3} ]]> order by price limit #{arg0},#{arg1}
+    </select>
+
+    <select id="querryForPageTotalCount" resultType="Integer">
+        SELECT COUNT(*) FROM t_flower
+    </select>
+
+    <select id="querryForPageItems" resultMap="flowerMap" >
+        select id,flower_name,flower_kind,flower_language,price,material,star,pack,img_path from t_flower limit #{arg0},#{arg1}
+    </select>
+
+    <insert id="addFlower" parameterType="com.flower.pojo.Flower">
+        insert into t_flower(flower_name,flower_kind,flower_language,price,material,star,pack,img_path) values(#{flower_name},#{flower_kind},#{flower_language},#{price},#{material},#{star},#{pack},#{img_path})
+    </insert>
+
+    <delete id="deleteFlowerById">
+        delete from t_flower where id = #{id}
+    </delete>
+
+    <select id="querryFlowerIdByOthers" resultMap="flowerMap">
+        select * from t_flower where flower_name=#{flower_name} and flower_kind=#{flower_kind} and flower_language=#{flower_language} and price=#{price} and material=#{material} and star=#{star} and pack=#{pack}
+    </select>
+
+    <select id="querryNightFlowersByFlowerKind" resultMap="flowerMap">
+        select id,flower_name,flower_kind,flower_language,price,material,star,pack,img_path from t_flower WHERE flower_kind=#{flower_kind} limit 0,9
+    </select>
+
+    <update id="updateFlower">
+        update t_flower set flower_name=#{flower_name},flower_kind=#{flower_kind},flower_language=#{flower_language},price=#{price},material=#{material},star=#{star},pack=#{pack},img_path=#{img_path} where id=#{id}
+    </update>
+
+    <select id="querryForPageTotalCountByFlowerKind" resultType="Integer">
+        SELECT COUNT(*) FROM t_flower WHERE flower_kind=#{flower_kind}
+    </select>
+
+    <select id="querryFlowerById" resultMap="flowerMap">
+        select id,flower_name,flower_kind,flower_language,price,material,star,pack,img_path from t_flower where id=#{id}
+    </select>
+
+    <select id="querryFlowers" resultMap="flowerMap">
+        select id,flower_name,flower_kind,flower_language,price,material,star,pack,img_path from t_flower
+    </select>
+
+</mapper>

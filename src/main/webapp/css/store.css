@@ -1,0 +1,283 @@
+* { margin: 0; padding: 0; }
+    body {
+    font-family: "Microsoft Yahei";
+    font-size: 14px;
+    color: #333;
+    background-color: #ffffff;
+}
+a, a:hover { 
+	text-decoration: none; 
+	color: #333; 
+}
+    
+ul, li { 
+list-style: none; 
+}
+	
+<!--svg{
+	    fill: currentColor;
+}
+
+
+.mt-tabpage {
+  
+    width: 1100px;
+    margin: 30px auto;
+    box-shadow: 0 0 5px #999;
+    background-color: #FFFFFF;
+    }
+	.mt-tabpage img:hover {
+	font-size: 20px;
+	 transform: scale(1.1);
+}
+    .mt-tabpage-title {
+	height: 44px;
+	font-size: 0;
+	background-color: #fff;
+	width: 94%;
+	margin: auto;
+	background: #fff;
+	border-bottom: 1px solid #f1f1f1;
+	text-align: center;
+    }
+    .mt-tabpage-title .mt-tabpage-item {
+	display: inline-block;
+	width: 105px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	color: #666;
+	font-size: 20px;
+    }
+    .mt-tabpage-title .mt-tabpage-item:hover{
+    	color: #eb4537;
+    }
+    .mt-tabpage-title .mt-tabpage-item-cur {
+	color: #eb4537;
+	font-size: 24px;
+	border-bottom: 1px solid #F85B5E;
+    }
+    .mt-tabpage-count {
+      	position: relative;
+      	width: 1100px;
+      	height: 340px;
+      	overflow: hidden;
+    }
+    .mt-tabpage-cont__wrap {
+      	position: absolute;
+    }
+    .mt-tabpage-count .mt-tabpage-item {
+      	width: 1100px;
+      	height: 340px;
+      	
+      	text-align: center;
+
+    }
+	.slide-content{
+		padding:0px;
+		height:340px;
+		width:300px;
+		float:left;
+		margin-left:50px;
+	}
+	.slide-content-text{
+	height: 32px;
+	margin-top: 0px;
+	padding-top: 8px;
+	font-size: 20px;
+	}
+	.main-container{
+	max-width: 1100px;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-left: auto;
+}-->
+
+
+.flower{
+	height: 500px;
+	width: 1100px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.swiper-container {
+	width:480px !important;
+	height:480px !important;
+	float:left;
+}
+
+.swiper-container img{
+	width:480px !important;
+	height:480px !important;
+	position:absolute;
+}
+
+.flower-text{
+	width: 600px;
+	margin: 0px;
+	height: 500px;
+	float: right;
+	position: relative;
+}
+
+
+	.btn {
+	font-size: 24px;
+	vertical-align: sub;
+	text-align: justify;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	border: 2px solid #F00;
+}
+
+.flower .flower-text p {
+	font-family: "仿宋";
+	color:#232628;
+	font-size: 30px;
+	line-height: 22px;
+	margin-top: 15px;
+	margin-bottom:15px;
+	font-weight:bold;
+}
+
+.flower-text .title-name{
+	font-weight:bold;
+	font-family:tahoma, arial , "Microsoft YaHei", "Hiragino Sans GB", sans-serif !important;
+}
+
+.flower .flower-text .huayu{
+	padding:12px 0;
+	background:#f7f9fa;
+	border-radius:0px 0px 8px 8px;
+	width:600px;
+	font-size:0;
+	color:#232628;
+	font-family:tahoma,arial,sans-serif;
+}
+
+.flower .flower-text .huayu-item{
+	font-size:10px;
+	/*height:px;*/
+	box-sizing:border-box;
+	display:inline-flex;
+}
+
+.flower .flower-text .huayu-item .huayu-label{
+	width:80px;
+	line-height:13px;
+	color:#71797F;
+	display:inline-block;
+	padding-left:12px;
+	padding-top:16px;
+	padding-bottom:5px;
+	font-size:13px;
+}
+
+.flower .flower-text .huayu-item .huayu-content{
+	width:480px;
+	line-height:13px;
+	color:#232628;
+	padding-left:30px;
+	font-size:13px;
+}
+
+
+
+.flower .flower-text .price{
+	padding:5px 0;
+	background:#f7f9fa;
+	border-radius:8px 8px 0px 0px;
+	width:600px;
+	font-size:0;
+	color:#232628;
+	font-family:tahoma,arial,sans-serif;
+	margin-top:30px;
+}
+
+.flower .flower-text .price .price-item{
+	font-size:10px;
+	height:25px;
+	box-sizing:border-box;
+	display:inline-flex;
+}
+
+.flower .flower-text .price .price-item .price-label{
+	width:80px;
+	line-height:18px;
+	color:#71797F;
+	display:inline-block;
+	padding-left:12px;
+	padding-top:15px;
+	padding-bottom:5px;
+	font-size:13px;
+	vertical-align:top;
+}
+
+.flower .flower-text .price .price-item .price-content{
+	text-align:justify;
+	width:480px;
+	line-height:45px;
+	color:#ff3d12;
+	display:inline-block;
+	padding-left:40px;
+	font-size:35px;
+}
+
+.flower .flower-text .preview-list{
+	margin-top:10px;
+	width:600px;
+	box-sizing:border-box;
+}
+	
+.flower .flower-text .preview-list  .preview-list-item {
+	width:140px;
+	height:auto;
+	position:relative;
+	box-sizing:border-box;
+	display:inline-block;
+	padding-left:40px;
+}
+
+.flower .flower-text .preview-list  .preview-list-item img{
+	width:100px;
+	border-radius:15px;
+
+}
+
+/*.flower .flower-text .shoppingcar h3{*/
+/*	display:inline-block;*/
+/*	vertical-align:middle;*/
+/*	border:2px;*/
+/*	font-size:13px;*/
+/*	border-radius:25px;*/
+/*	color:#ffffff;*/
+/*	width:100px;*/
+/*	height:26px;*/
+/*	margin-left:200px;*/
+/*	padding-left:29px;*/
+/*	padding-top:5px;*/
+/*}*/
+
+.flower_add button{
+	background:linear-gradient( 90deg,#ff80a1 0%,#ff4590 100%);
+	text-align:center;
+	border-radius:25px;
+	font-size: 25px;
+	font-weight: lighter;
+	float: left;
+	margin-top: 40px;
+	color: #065fd4;
+	padding-left:10px;
+	width:160px;
+	margin-left:250px;
+}
